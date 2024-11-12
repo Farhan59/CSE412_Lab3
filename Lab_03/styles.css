@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,30 +7,37 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Header and Navigation */
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 2rem;
 }
 
 nav ul {
-    list-style-type: none;
     display: flex;
-    justify-content: center;
+    list-style-type: none;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 nav ul li a:hover {
@@ -39,31 +46,96 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-color: #282828;
-    color: #fff;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 100px 20px;
 }
 
-.hero h1 {
+.hero h2 {
     font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
-button {
+.btn-main {
     background-color: #ffcc00;
-    padding: 10px 20px;
+    color: #333;
     border: none;
+    padding: 15px 30px;
     font-size: 1rem;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-button:hover {
+.btn-main:hover {
     background-color: #ffaa00;
 }
+
+/* Features Section */
+.features {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    font-size: 1rem;
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: #333;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #282828;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
 
 /* Feature Cards */
 .features {
