@@ -4,43 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Services - Intermediate Surface</title>
+    <title>Our Services - Intermediate Surface</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="logo">
+                <a href="index.html">Intermediate Surface</a>
+            </div>
+            <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
     <main>
+        <section class="hero">
+            <h1>Explore Our Expert Services</h1>
+            <p>We deliver comprehensive solutions to help your business grow in the digital landscape.</p>
+        </section>
+
         <section class="services">
-            <h1>Our Services</h1>
+            <h2>Our Services</h2>
             <div class="service-grid">
                 <div class="service-item">
-                    <h2>Web Development</h2>
-                    <p>We create responsive and high-performance websites.</p>
+                    <i class="fas fa-laptop-code service-icon"></i>
+                    <h3>Web Development</h3>
+                    <p>We create responsive, high-performance websites with cutting-edge technologies to enhance user experience.</p>
                 </div>
                 <div class="service-item">
-                    <h2>Mobile Development</h2>
-                    <p>Building cross-platform apps with a native feel.</p>
+                    <i class="fas fa-mobile-alt service-icon"></i>
+                    <h3>Mobile Development</h3>
+                    <p>Building cross-platform mobile applications that provide a seamless experience for your customers.</p>
                 </div>
                 <div class="service-item">
-                    <h2>Digital Marketing</h2>
-                    <p>Boost your online presence with targeted strategies.</p>
+                    <i class="fas fa-chart-line service-icon"></i>
+                    <h3>Digital Marketing</h3>
+                    <p>Boost your online presence with our targeted SEO, PPC, and social media strategies to drive growth.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-shield-alt service-icon"></i>
+                    <h3>Cybersecurity</h3>
+                    <p>Protect your digital assets with our comprehensive cybersecurity solutions.</p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Intermediate Surface</p>
+        <div class="footer-container">
+            <p>&copy; 2024 Intermediate Surface. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+        </div>
     </footer>
 
     <script src="script.js"></script>
